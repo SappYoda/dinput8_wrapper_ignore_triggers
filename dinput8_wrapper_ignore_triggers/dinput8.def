@@ -1,0 +1,11 @@
+    ; dinput8.def
+    ;
+    ; This file is necessary to properly export the DirectInput8Create function
+    ; by name and ordinal, matching the real dinput8.dll. This ensures that
+    ; the game's loader correctly resolves the function import.
+
+    LIBRARY "dinput8"
+
+    EXPORTS
+        DirectInput8Create @1
+    
